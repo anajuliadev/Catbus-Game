@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/cenário.gif);
+    background-repeat: no-repeat;
+    width: 100vr;
+}
+
+.game-board{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border: 200px solid #09031a; 
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 9999;
+    top: 80px;
+    
+}
+.title span{
+    font-size: 40px;
+}
+
+.house{
+    position: absolute;
+    bottom: 0;
+    width: 110px;
+    right: -80px;
+    animation: house-animation 1.5s infinite linear;
+}
+
+.catbus{
+    width: 200px;
+    position: absolute;
+    bottom: 0px;
+    transform: scaleX(-1);
+}
+
+.jump {
+    animation: catbus-animation 1000ms ease-out;
+}
+
+@keyframes house-animation {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes catbus-animation{
+    0% {
+        bottom: 0;
+    }
+
+    40%{
+        bottom:200px;
+    }
+
+    50% {
+        bottom: 200px;
+    } 
+
+    60% {
+        bottom: 200px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
