@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +12,32 @@ body{
     width: 100vr;
 }
 
+
+.play{
+/*     position: relative; */
+    display: flex;
+    justify-content: center;
+
+}
+.play.click {
+
+}
+.play p, img{
+    position: absolute;
+    top: 200px;
+}
+.play p{
+    color: #F1CE0E;
+    font-size: 60px;
+}
+
+
+
 .game-board{
     width: 100%;
     height: 100vh;
     margin: 0;
-    border: 200px solid #09031a; 
+    border: 200px solid #080C20; 
     position: relative;
     overflow: hidden;
 }
@@ -82,4 +105,44 @@ body{
     100% {
         bottom: 0;
     }
+}
+
+.game-over{
+    display: none;
+    justify-content: center;
+}
+.game-over.over{
+    display: flex;
+}
+
+
+.game-over p ,img{
+    position: absolute;   
+}
+.game-over p{
+    color: #F1CE0E;
+    font-family: 'Inter' , sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    bottom: 450px;   
+}
+.game-over img{
+    width: 60px;
+    bottom: 360px;
+}
+
+/* .game-over img:hover{
+    box-shadow: #080C20 1px 4px 5px 20pc;
+} */
+
+
+.byname{
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter' , sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 9999;
+    bottom: 50px;
 }

@@ -1,6 +1,8 @@
 const catbus = document.querySelector('.catbus');
 const house = document.querySelector('.house');
 
+const gameover = document.querySelector('.game-over');
+
 const jump = () => {
     catbus.classList.add('jump');
 
@@ -25,14 +27,22 @@ const loop = setInterval(() => {
         catbus.style.animation = 'none';
         catbus.style.bottom = `${catbusPosition}px`;
 
-        catbus.src = './assets/game-over.png'
+        catbus.
+        
+        src = './assets/game-over.png'
         catbus.style.width = '130px';
         catbus.style.marginleft = '0px';
 
         clearInterval(loop);
+        
+        crash();
     }
 
 }, 10);
+
+function crash (){
+    gameover.classList.add('over');
+}
 
 
 document.addEventListener('keydown' , jump);
