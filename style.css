@@ -13,13 +13,13 @@ body{
 }
 
 
-.play{
+/* .play{ */
 /*     position: relative; */
-    display: flex;
+ /*    display: flex;
     justify-content: center;
 
-}
-.play.click {
+} */
+/* .play.click {
 
 }
 .play p, img{
@@ -29,7 +29,7 @@ body{
 .play p{
     color: #F1CE0E;
     font-size: 60px;
-}
+} */
 
 
 
@@ -39,7 +39,7 @@ body{
     margin: 0;
     border: 200px solid #080C20; 
     position: relative;
-    overflow: hidden;
+    
 }
 
 .title {
@@ -57,6 +57,7 @@ body{
 }
 
 .house{
+    opacity: 0.5;
     position: absolute;
     bottom: 0;
     width: 110px;
@@ -113,6 +114,10 @@ body{
 }
 .game-over.over{
     display: flex;
+}
+
+.game-board.over{
+    backdrop-filter: blur(10px);
 }
 
 

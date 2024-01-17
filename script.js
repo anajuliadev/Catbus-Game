@@ -2,6 +2,7 @@ const catbus = document.querySelector('.catbus');
 const house = document.querySelector('.house');
 
 const gameover = document.querySelector('.game-over');
+const gameboard = document.querySelector('.game-board');
 
 const jump = () => {
     catbus.classList.add('jump');
@@ -42,6 +43,7 @@ const loop = setInterval(() => {
 
 function crash (){
     gameover.classList.add('over');
+    gameboard.classList.add('over');
 }
 
 
